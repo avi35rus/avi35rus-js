@@ -1,0 +1,214 @@
+@media (max-width: 767.9px) {
+	.header__inner-right {
+		margin-left: auto;
+	}
+
+	.header__inner-right-other {
+		display: none;
+	}
+
+	.header__inner-right::before {
+		margin: 0 20px 0 16px;
+	}
+
+	.toggle-nav._active {
+		margin-left: 8px;
+	}
+}
+
+@media (max-width: 360px) {
+	.menu__body {
+		width: 100%;
+	}
+
+	.menu__header {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding: 0 24px;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+	}
+
+	.header__inner-left >:nth-child(2)::before {
+		content: "";
+		display: block;
+		height: 32px;
+		width: 2px;
+		border-radius: 1px;
+		background-color: #EAEAEA;
+		margin: 0 20px;
+		transition: all 0.2s ease-in;
+	}
+
+	.logo._lock::before {
+		width: 0;
+		margin: 0 8px;
+		transition: all 0.2s ease-in;
+	}
+
+	.toggle-nav {
+		margin-right: 0px;
+	}
+
+	.main__content {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+
+	.content__description{
+		width: 47%;
+		margin: 0 24px 0 0;
+		
+	}
+
+	.content__picture {
+		margin: 0 0 0 24px;
+		width: 54%;
+	}
+
+	.description__limiter {
+		max-height: 160px;
+	}
+
+	.main__header {
+		margin-bottom: 32px;
+	}
+
+	.nav-slider__items {
+		margin-bottom: 32px;
+	}
+
+	.nav-slider__item {
+		margin: 0 4px 0 0;
+	}
+
+	.description__limiter p {
+		line-height: 20px;
+	}
+
+	 .description__read-more-button {
+		margin: 10px 0 0 1px;
+	}
+
+	.content__picture img {
+		border-radius: 5px;
+	 }
+}
+
+@media (min-width: 1120px) {
+	.body {
+		background-color: #F8F8F8;
+	}
+
+	.header {
+		border: none;
+		padding: 0;
+		height: 40px;
+	}
+
+	.container {
+		padding: 0 32px;
+	}
+
+	.main {
+		margin-top: 0px;
+		padding-top: 42px;
+	}
+
+	.main__header {
+		margin-bottom: 8px;
+	}
+
+	.main__content {
+		margin: 0 2px;
+	}
+	
+	.nav-slider__items {
+		flex-wrap: wrap;
+		height: 88px;
+		margin-bottom: 10px;
+	}
+
+	.nav-slider__item:not(:last-child) {
+		margin-bottom: 6px;
+	}
+
+	.header__inner-left,
+	.header__inner-right-other {
+		display: none;
+	}
+
+	.header {
+		position: absolute;
+	}
+
+	.header__inner {
+		justify-content: end;
+		padding-top: 42px;
+	}
+
+	.header__inner-right::before {
+		display: none;
+	}
+
+	.header__inner-right {
+		z-index: 1;
+	}
+
+	.header__inner-right > * {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		font-weight: 500;
+		color: #1B1C21;
+		letter-spacing: -0.2px;
+	}
+
+	.header__inner-right > * + * {
+		margin-left: 32px;
+	}
+	
+	.header__inner-right > *:first-child::before {
+		content: "Оставить заявку";
+		margin-right: 8px;
+	}
+
+	.header__inner-right > *:first-child:hover > * {
+		transform: scale(1.1);
+		transition: all 0.2s ease-in;
+	}
+
+	.header__inner-right > *:last-child::before {
+		content: "Статус ремонта";
+		margin-right: 10px;
+	}
+
+	.header__inner-right > *:last-child:hover > * {
+		transform: scale(1.1);
+		transition: all 0.2s ease-in;
+	}
+
+	.content__picture {
+		margin-left: 18px;
+	}
+
+	.content__description {
+		margin-right: 18px;
+	}
+
+	.content__description p {
+		width: 490px;
+	}
+
+	.description__read-more-button {
+		margin: 14px 0 0 -2px;
+	}
+}

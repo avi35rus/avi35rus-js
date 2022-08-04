@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "css/style.css">
+	<link rel = "stylesheet" href = "css/media.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="page-overlay"></div>
+
+	<header class = "header">
+		<div class = "container">
+			<div class = "header__inner">
+				<div class = "header__inner-left">
+
+					<div id = "toggle-nav" onclick="ScrollUp();return!1;" class = "toggle-nav animation-icons">
+						<span></span>
+					</div>
+
+					<div class = "logo">
+						<img src="images/Group.svg" alt="">
+					</div>	
+				</div>
+
+				<div class="header__inner-right-other">
+					<a href = "#" id = "call">
+						<img class = "animation-icons" src="images/call.svg" alt="">
+					</a>
+					<a href = "#" id = "chat">
+						<img class = "animation-icons" src="images/chat.svg" alt="">
+					</a>
+					<a href = "#" id = "profile">
+						<img class = "animation-icons" src="images/profile.svg" alt="">
+					</a>
+				</div>
+
+				<div class = "header__inner-right">
+					<a href = "#">
+						<img class = "animation-icons" src="images/repair.svg" alt="">
+					</a>
+					<a href = "#">
+						<img class = "animation-icons" src="images/checkstatus.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<main class = "main">
+		<div class = "container">
+			<div class = "main__header">
+				<h1>Услуги и сервисы</h>
+			</div>
+
+			<nav class = "main__nav-slider">
+				<div class = "nav-slider__items">
+					<a class = "nav-slider__item" href="#">Ремонтируемые устройства</a>
+					<a class = "nav-slider__item" href="#">Дополнительные услуги</a>
+					<a class = "nav-slider__item" href="#">Цены на услуги</a>
+					<a class = "nav-slider__item" href="#">Адреса сервисных центров</a>
+					<a class = "nav-slider__item" href="#">Специальные цены</a>
+					<a class = "nav-slider__item" href="#">Отзывы</a>
+				</div>
+			</nav>
+
+			<div class="main__content">
+				<div class="content__description">
+					<input type = "checkbox" class = "description__read-more-checker" id = "read-more-checker" />
+					<div class="description__limiter">
+						<p>
+							Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+							Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+							<br>
+							<br>
+							Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. 
+							Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+						</p>
+					</div>
+
+					<label for="read-more-checker" class="description__read-more-button">
+						<img src="images/expand.svg" alt="">
+					</label>
+				</div>
+
+				<div class="content__picture">
+					<img src="images/picture.png" alt="">
+				</div>
+			</div>
+		</div>
+	</main>
+	
+
+	</div>
+
+	<nav class = "menu__body">
+
+		<div class="menu__header">
+			<div class="menu__search">
+				<a href="#" id="search">
+					<img class="animation-icons" src="images/search.svg" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="menu__content">
+			<ul class = "menu__list">
+				<li><a href = "#" class = "menu__link">Ремонт техники</a></li>
+				<li><a href = "#" class = "menu__link">Услуги и сервисы</a></li>
+				<li><a href = "#" class = "menu__link">Корпоративным клиентам</a></li>
+				<li><a href = "#" class = "menu__link">Продавцам техники</a></li>
+				<li><a href = "#" class = "menu__link">Партнерам</a></li>
+				<li><a href = "#" class = "menu__link">Производителям</a></li>
+				<li><a href = "#" class = "menu__link">Наши сервисные центры</a></li>
+				<li><a href = "#" class = "menu__link">Контакты</a></li>
+			</ul>
+
+			<div class="menu__bottom-icons">
+				<a href = "#" id = "call">
+					<img class = "animation-icons" src="images/call.svg" alt="">
+				</a>
+				<a href = "#" id = "chat">
+					<img class = "animation-icons" src="images/chat.svg" alt="">
+				</a>
+				<a href = "#" id = "profile">
+					<img class = "animation-icons" src="images/profile.svg" alt="">
+				</a>
+			</div>
+
+			<p>mail@cps.com</p>
+			<p>8 800 890 8900</p>
+
+			<ul class = "menu__language">
+				<li><a href = "#" class = "language__link">RU</a></li>
+				<li><a href = "#" class = "language__link">EN</a></li>
+				<li><a href = "#" class = "language__link">CH</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	
+	<script src="js/script.js"></script>
+</body>
+</html>
