@@ -590,18 +590,16 @@ html {
 .band-list__header {
 	display: flex;
 	align-items: center;
-	height: 56px;
+	height: 80px;
 	padding: 16px 0;
 	background: linear-gradient(90deg, #F8F8F8, #FFFFFF);
 	width: 100%;
-	margin-bottom: 24px;
+	margin-bottom: 16px;
 }
 
 .brand-list__item {
 	display: flex;
 	background-color: #FFFFFF;
-	width: 206px !important;
-	height: 70px !important;
 	border: 1px solid #EAEAEA;
 	border-radius: 6px;
 	justify-content: space-between;
@@ -612,6 +610,8 @@ html {
 
 .brand-list__item.swiper-slide {
 	margin-bottom: 16px;
+	width: 206px;
+	height: 70px;
 }
 
 .brand-list__item-button {
@@ -648,27 +648,31 @@ html {
 .swiper-custom-pagination {
 	display: flex;
 	justify-content: center;
-	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 .swiper-custom-pagination .swiper-pagination-bullet {
 	width: 12px;
 	height: 12px;
-	padding: 0 6px;
-	border-radius: 6;
 	background: #B5B6BC;
 }
+
 
 .swiper-custom-pagination .swiper-pagination-bullet-active {
 	background: #B5B6BC;
 }
 
  /*  */
-
  .brand-list.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
 	margin: 0 -16px;
 	padding: 0 16px;
 	z-index: 0;
+ }
+ 
+ .brand-list.swiper.swiper-initialized.swiper-horizontal,
+ .brand-list.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events {
+	margin: 0 -16px;
+	padding: 0 16px;
  }
 
  .brand-list__left-shadow {
@@ -707,6 +711,7 @@ html {
 	letter-spacing: -0.2px;
 	font-weight: 400;
 	text-transform: uppercase;
+	line-height: 24px;
 }
 
 .brand-list__read-more-button {
@@ -745,7 +750,7 @@ html {
 	background: none;
 	border: none;
 	text-decoration: none;
-	margin: 6px 0;
+	margin: 6px 0 16px;
 	max-height: 24px;
 	padding: 0;
 	

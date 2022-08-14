@@ -109,6 +109,17 @@
 	.main__barnd-list {
 		margin-left: -24px;
 	}
+
+	.band-list__header {
+		height: 56px;
+		margin-bottom: 24px;
+	}
+
+	.brand-list.swiper.swiper-initialized.swiper-horizontal,
+	.brand-list.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events {
+		margin: 0 -24px;
+		padding: 0 24px;
+	}
 }
 
 @media (min-width: 1120px) {
@@ -201,5 +212,11 @@
 
 	.main-content__read-more-button {
 		margin: 14px 0 0 -2px;
+	}
+
+	.brand-list.swiper.swiper-initialized.swiper-horizontal,
+	.brand-list.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events {
+		margin: 0 -32px;
+		padding: 0 32px;
 	}
 }
