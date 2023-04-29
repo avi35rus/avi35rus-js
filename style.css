@@ -524,7 +524,6 @@ body {
     max-height: 176px;
     overflow: hidden;
     position: relative;
-    transition: all 0.5s ease-out;
     justify-content: space-between; }
     .brand-list__items.swiper-wrapper._limiter._active {
       max-height: 100%; }
@@ -648,7 +647,6 @@ body {
     max-height: 176px;
     overflow: hidden;
     position: relative;
-    transition: all 0.5s ease-out;
     justify-content: space-between; }
     .technique-list__items.swiper-wrapper._limiter._active {
       max-height: 100%; }
@@ -823,7 +821,6 @@ body {
     max-height: 176px;
     overflow: hidden;
     position: relative;
-    transition: all 0.5s ease-out;
     justify-content: space-between; }
     .price-list__items.swiper-wrapper._limiter._active {
       max-height: 100%; }
