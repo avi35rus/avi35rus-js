@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background: #95e5c4;
+	padding: 0 20px;
+}
+
+.wrapper{
+	max-width: 450px;
+	margin: 150px auto;
+}
+
+.wrapper .search-input{
+	background: #fff;
+	width: 100%;
+	position: relative;
+	margin-bottom: 30px;
+	box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+	height: 55px;
+	width: 100%;
+	outline: none;
+	border: none;
+	padding: 0 60px 0 20px;
+	font-size: 18px;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.autocomplete-list li{
+	list-style-type: none;
+	width: 100%;
+	font-size: 14px;
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+.autocomplete-list li:hover{
+	background: #efefef;
+}
+
+.repository-list {
+	width: 100%;
+	position: relative;
+}
+
+.repository-list li {
+	list-style-type: none;
+	background: #35c488;
+	border-bottom: 1px solid;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.repository-list>:last-child {
+	border: none;
+}
+
+.remove-btn {
+	background: none;
+	border: none;
+	width: 30px;
+	height: 30px;
+	margin: auto 0;
+	position: relative;
+	cursor: pointer;
+}
+
+.remove-btn::before,
+.remove-btn::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 2px;
+	background-color: red;
+}
+
+.remove-btn::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.remove-btn::after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
