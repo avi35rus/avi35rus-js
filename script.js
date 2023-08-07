@@ -23,10 +23,7 @@ function updateAutocompleteList(repositories) {
 	repositories.slice(0, 5).forEach((repo) => {
 		const listItem = document.createElement('li');
 		listItem.textContent = repo.name;
-		listItem.addEventListener('click', () => {
-			autocompleteList.innerHTML = '';
-			addRepositoryToList(repo));
-		}
+		listItem.addEventListener('click', () => addRepositoryToList(repo));
 		autocompleteList.appendChild(listItem);
 	});
 }
@@ -38,6 +35,8 @@ function addRepositoryToList(repo) {
 		<button class="remove-btn"></button>
 		`;
 	repositoryList.appendChild(listItem);
+
+	autocompleteList.innerHTML = '';
 	searchInput.value = '';
 
 	const removeButton = listItem.querySelector('.remove-btn');
