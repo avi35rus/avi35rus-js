@@ -23,7 +23,10 @@ function updateAutocompleteList(repositories) {
 	repositories.slice(0, 5).forEach((repo) => {
 		const listItem = document.createElement('li');
 		listItem.textContent = repo.name;
-		listItem.addEventListener('click', () => addRepositoryToList(repo));
+		listItem.addEventListener('click', () => {
+			autocompleteList.innerHTML = '';
+			addRepositoryToList(repo));
+		}
 		autocompleteList.appendChild(listItem);
 	});
 }
